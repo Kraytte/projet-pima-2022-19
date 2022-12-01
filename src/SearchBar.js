@@ -114,11 +114,16 @@ import Jquery from "jquery";
           var data2=data.split(',');
           var arr=JSON.parse(data2);
           console.log(arr);
-          arr.forEach(e=>influenceurs.push([e.username,e.nb_views,e.nb_subscribers,e.nb_videos,e.image,e.url,e.reseau]));}
+          for(let i=0; i<arr.length;i++){
+            let to_insert=[arr[i].username,arr[i].nb_views,arr[i].nb_subscribers,arr[i].nb_videos,arr[i].image,arr[i].url,arr[i].reseau];
+            if(!influenceurs.includes(to_insert)){
+              influenceurs.push(to_insert);
+            }
+          }
           props.rerender();
           
         }
-      })
+      }})
       
      
 
