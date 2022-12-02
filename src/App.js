@@ -117,13 +117,10 @@ forceUpdate = () => {
 
     else if (this.props.Page == 'Statistiques') {
       return(<>
-        <div className='statimgs'>
-        <StatImg Image="./images/abos_Joueurdugrenier.png"/>
+      <StatImg Image="./images/abos_Joueurdugrenier.png"/>
       <StatImg Image="./images/abos_JuegaGerman.png"/>
       <StatImg Image="./images/abos_Markiplier.png"/>
-      <StatImg Image="./images/abos_jdg.png"/>
       <StatImg Image="./images/abos_notabenemovies.png"/>
-        </div>
       </>);
     }
 
